@@ -19,6 +19,9 @@ export default function Home(props) {
 						<ListGroup.Item action>
 							<Link href={'/admin/panel'}><div>admin - panel</div></Link>
 						</ListGroup.Item>
+						<ListGroup.Item action>
+							<Link href={'/filteredPosts'}><div>Filtered Posts</div></Link>
+						</ListGroup.Item>
 					</ListGroup>
 				</Row>
 			</Container>
