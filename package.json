@@ -1,18 +1,20 @@
 {
-  "name": "next-no-approuter",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "bootstrap": "^5.3.5",
-    "next": "15.2.4",
-    "react": "^19.0.0",
-    "react-bootstrap": "^2.10.9",
-    "react-dom": "^19.0.0"
-  }
+	"name": "next-no-approuter",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"serve-json": "json-server --watch db.json --port 4000"
+	},
+	"dependencies": {
+		"bootstrap": "^5.3.5",
+		"json-server": "^1.0.0-beta.3",
+		"next": "15.2.4",
+		"react": "^19.0.0",
+		"react-bootstrap": "^2.10.9",
+		"react-dom": "^19.0.0"
+	}
 }

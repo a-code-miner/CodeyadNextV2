@@ -53,7 +53,7 @@ export default postID;
 
 
 export async function getStaticPaths() {
-    const res = await fetch(`https://jsonplaceholder.typicode.com/posts`);
+    const res = await fetch(`http://localhost:4000/posts`);
     const posts = await res.json();
     // const paths = posts.map(post => {
     //     return { params: { postID: `${post.id}` } }
@@ -72,12 +72,13 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
     const { params } = context;
     console.log(params.postID);
-    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${params.postID}`);
+    const res = await fetch(`http://localhost:4000/posts/${params.postID}`);
     const post = await res.json();
     return {
         props: {
             post,
         },
+        revalidate: 20,
     };
 };
 
