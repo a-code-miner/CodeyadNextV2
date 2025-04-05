@@ -11,7 +11,11 @@ export default function Home(props) {
 							<Link href={'/posts'}><div>posts</div></Link>
 						</ListGroup.Item>
 					</ListGroup>
-
+					<ListGroup>
+						<ListGroup.Item action>
+							<Link href={'/users'}><div>users</div></Link>
+						</ListGroup.Item>
+					</ListGroup>
 				</Row>
 			</Container>
 		</>
