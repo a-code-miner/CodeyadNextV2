@@ -218,5 +218,13 @@
 				"bs": "e-enable innovative applications"
 			}
 		}
-	]
+	],
+	"admin": {
+		"id": 1,
+		"sales": 10,
+		"products": 50,
+		"visits": 2908,
+		"customers": 34,
+		"revenue": 2335
+	}
 }
