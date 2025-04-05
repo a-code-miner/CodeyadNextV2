@@ -8,7 +8,7 @@ export default function Home(props) {
 				<Row className='mt-5'>
 					<ListGroup>
 						<ListGroup.Item action>
-							<Link href={'/users'}><div>users</div></Link>
+							<Link href={'/posts'}><div>posts</div></Link>
 						</ListGroup.Item>
 					</ListGroup>
 
